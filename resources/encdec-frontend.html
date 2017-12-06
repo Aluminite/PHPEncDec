@@ -1,0 +1,24 @@
+<title>AAAAAAAAAAAAAAAAAAAA</title>
+<link rel="stylesheet" href="/resources/encdec-style.css">
+<script type="text/javascript" src="/resources/encdec-js.js"></script>
+<fieldset>
+  <form id='login' action='/encdec.php' method='post' accept-charset='UTF-8'>
+    <div id='encOrDecHidden'>
+      <input type='hidden' name='encOrDec' id='encOrDec' value='notset'>
+    </div>
+    <div id='inputTypeDiv'>
+      <input type='hidden' name='inputType' id='inputType' value='notset'>
+    </div>
+    <input type='radio' name='encdec' id='encdec' value='enc' onclick='radioClickEnc();'> Encrypt<br>
+    <input type='radio' name='encdec' id='encdec' value='enc' onclick='radioClickDec();'> Decrypt<br><br>
+    <input type='radio' name='type' id='type' value='url' onclick='radioClickURL();'> URL<br>
+    <input type='radio' name='type' id='type' value='text' onclick='radioClickText();'> Text<br><br>
+    <div id='textInputDiv'>
+      Choose please
+    </div><br>
+    <div id='isCSVDiv'>
+    </div>
+    <label for='password' >Key:</label>
+    <input type='password' name='key' id='key' maxlength="128"><br><br>
+    <input type='submit' name='Submit' value='Submit'>
+  </form>
